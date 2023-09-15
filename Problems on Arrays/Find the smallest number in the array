@@ -1,1 +1,42 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
 
+void smallest(int arr[], int n)
+{
+    int temp = arr[0];
+    for(int i = 1; i <= n; i++)
+    {
+        if(temp > arr[i])
+        {
+            temp = arr[i];
+        
+            
+        }
+        
+    }
+    cout<<temp;
+}
+/*
+void smallest(int arr[], int n)
+{
+    sort(arr, arr + n);
+    cout<<arr[0];
+}
+*/
+
+
+int main()
+{
+    int arr[5] = {8,0,1,5,3};
+    int n = 5;
+    
+    smallest(arr,n);
+    
+    return 0;
+}
+
+
+/*TC for brute approach = O(nlogn)   [sorting]
+TC for optimal approach = O(n) []
+*/
